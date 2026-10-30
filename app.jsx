@@ -7,6 +7,7 @@ const ACCENT    = "#B8915A";
 function App() {
   React.useEffect(() => {
     document.documentElement.style.setProperty('--gold', ACCENT);
+    document.documentElement.style.setProperty('--serif', '"Inter Tight", system-ui, sans-serif');
   }, []);
 
   const waBase = `https://wa.me/${PHONE.replace(/\D/g, '')}`;

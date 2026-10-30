@@ -126,9 +126,24 @@ function Phone({ children, time = "9:41" }) {
 window.Phone = Phone;
 
 /* ---------- Phone placeholder / video ---------- */
-// youtubeId: ID del video de YouTube (la parte después de youtu.be/ o v=)
-// Cuando es null muestra el placeholder. Cuando tiene valor muestra el video embebido.
-function PhonePlaceholder({ kind, label, sublabel, youtubeId }) {
+// videoSrc: Ruta local al archivo de video (ej. 'assets/01_url_publica.mp4')
+// youtubeId: ID del video de YouTube (fallback opcional)
+// Cuando no hay video muestra el placeholder con play button.
+function PhonePlaceholder({ kind, label, sublabel, videoSrc, youtubeId }) {
+  if (videoSrc) {
+    return (
+      <div className="phone-video">
+        <video
+          src={videoSrc}
+          autoPlay
+          loop
+          muted
+          playsInline
+          style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '24px' }}
+        />
+      </div>
+    );
+  }
   if (youtubeId) {
     return (
       <div className="phone-video">

@@ -29,7 +29,7 @@ function Hero({ wa, tagline }) {
     <section className="hero">
       <div className="wrap">
         <div className="hero-meta">
-          <span className="left">N.º 01 — Cali, Colombia</span>
+          <span className="left">N.º 01</span>
           <span className="right">{today.toUpperCase()}</span>
         </div>
 
@@ -76,6 +76,7 @@ function Hero({ wa, tagline }) {
                 kind={<>Pide, paga y <em>disfruta.</em></>}
                 label="01 · Cliente en mesa"
                 sublabel="Escanea el QR y pide sin esperar al mesero. Reproduce el video."
+                videoSrc="assets/02_mesa_qr.mp4"
               />
             </Phone>
           </div>

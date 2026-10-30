@@ -7,6 +7,7 @@ const { useState: useStateVid } = React;
 const VIDEOS = [
   {
     id: 'url',
+    videoSrc: 'assets/01_url_publica.mp4',
     youtubeId: null,
     num: '01',
     name: <>Tu URL <em>pública</em></>,
@@ -25,6 +26,7 @@ const VIDEOS = [
   },
   {
     id: 'mesa',
+    videoSrc: 'assets/02_mesa_qr.mp4',
     youtubeId: null,
     num: '02',
     name: <>La <em>mesa</em></>,
@@ -43,6 +45,7 @@ const VIDEOS = [
   },
   {
     id: 'mesero',
+    videoSrc: 'assets/03_dashboard_mesero.mp4',
     youtubeId: null,
     num: '03',
     name: <>El <em>mesero</em></>,
@@ -61,6 +64,7 @@ const VIDEOS = [
   },
   {
     id: 'cocina',
+    videoSrc: 'assets/04_tablero_cocina.mp4',
     youtubeId: null,
     num: '04',
     name: <>La <em>cocina</em></>,
@@ -129,6 +133,7 @@ function Videos() {
                 kind={v.kind}
                 label={v.label}
                 sublabel={v.sub}
+                videoSrc={v.videoSrc}
                 youtubeId={v.youtubeId}
               />
             </Phone>

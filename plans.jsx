@@ -120,7 +120,7 @@ function CtaFinal({ wa }) {
           ¿Listo para <em>cocinar</em> mejor?
         </h2>
         <p className="lede">
-          Un mensaje. Una conversación. Tu restaurante, organizado por dentro y por fuera. El equipo te responde directo desde Cali.
+          Un mensaje. Una conversación. Tu restaurante, organizado por dentro y por fuera. El equipo te responde directo.
         </p>
         <div className="cta-buttons">
           <a href={wa} target="_blank" rel="noreferrer" className="btn btn-dark">
@@ -138,7 +138,7 @@ function Foot() {
   return (
     <footer className="foot">
       <div className="wrap foot-grid">
-        <div className="foot-meta">Bistró · Cali, Colombia · +57 317 571 8658</div>
+        <div className="foot-meta">Bistró · +57 317 571 8658</div>
         <div className="brand-mark" style={{justifySelf:'center', color:'var(--gold)'}}><Icon.Cloche size={28} /></div>
         <div className="foot-credit">© 2026 · Bistró.tuc-tuc.co</div>
       </div>
